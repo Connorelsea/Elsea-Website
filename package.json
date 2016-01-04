@@ -1,0 +1,24 @@
+{
+  "name": "elsea-website",
+  "version": "1.0.0",
+  "description": "The official website for Elsea Labs",
+  "main": "entry.js",
+  "scripts": {
+    "start": "node entry.js",
+    "test": "mocha --compilers js:babel-register test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Connorelsea/Elsea-Labs-Website.git"
+  },
+  "author": "Connor M. Elsea",
+  "bugs": {
+    "url": "https://github.com/Connorelsea/Elsea-Labs-Website/issues"
+  },
+  "homepage": "https://github.com/Connorelsea/Elsea-Labs-Website#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.3.13",
+    "express": "^4.13.3"
+  }
+}
