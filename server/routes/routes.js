@@ -1,6 +1,8 @@
 import express from "express";
 const Router = express.Router();
 
+// Builds basic routes from an array of routes.
+
 export function build_routes(routes, parent_router) {
 
 	if (parent_router === undefined) {
@@ -24,6 +26,9 @@ export function build_routes(routes, parent_router) {
 	return parent_router;
 }
 
+// Checks if a router contains a route with the
+// specified path, returns true or false.
+
 export function contains_route(router, route_path) {
 
 	let contains = 0;
@@ -37,7 +42,7 @@ export function contains_route(router, route_path) {
 }
 
 export const routes = [
-	{
+	{ 
 		name     : "Home",
 		path     : "/",
 		desc     : "Elsea Labs software, design, and innovation.",
